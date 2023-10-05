@@ -1,0 +1,448 @@
+@import url("https://v1.fontapi.ir/css/Estedad:200;300;500;700");
+
+:root {
+  --bgColor: #ffffff;
+  --grey: #717171;
+  --lightGrey: #adadad;
+  --darkGrey: #353535;
+  --primary: #417f56;
+  --greenTint: #e5f2e9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1160px;
+  height: 2123;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  font-family: "Estedad";
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+nav {
+  /* position: fixed; */
+  width: 100%;
+  height: 115px;
+  background-color: var(--bgColor);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-sections {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+}
+
+li {
+  margin-left: 1rem;
+  list-style: none;
+  color: var(--grey);
+  font-size: 20px;
+}
+li a {
+  display: flex;
+  align-items: center;
+}
+a {
+  color: var(--grey);
+  text-decoration: none;
+  position: relative;
+}
+.branch-items {
+  display: none !important;
+  width: 132px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 53%;
+  top: 15%;
+  color: var(--darkGrey);
+  background-color: var(--bgColor);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  box-shadow: 0 6px 10px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.branch-items a {
+  border-bottom: 1px solid var(--lightGrey);
+  padding: 8px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.menu-items {
+  display: none !important;
+  width: 132px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 40%;
+  top: 15%;
+  color: var(--darkGrey);
+  background-color: var(--bgColor);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  box-shadow: 0 6px 10px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.menu-items a {
+  border-bottom: 1px solid var(--lightGrey);
+  padding: 8px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.menu:hover .menu-items {
+  display: block !important;
+}
+
+.branch:hover .branch-items {
+  display: block !important;
+}
+.fas {
+  font-size: 10px;
+  margin-right: 5px;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+}
+.icons img {
+  background-color: var(--greenTint);
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  margin-left: 0.4rem;
+}
+.user-icon-container{
+    position: relative;
+}
+.user-icon {
+  background-color: var(--greenTint);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+.user-icon-container:hover .user-items{
+    display: block !important;
+    transition: all 0.5s ease-in-out;
+}
+.user-icon i {
+  color: var(--primary);
+  position: relative;
+  left: 10px;
+  top: 12px;
+  display: none;
+}
+
+.user-icon:hover i {
+  display: block;
+}
+
+.user-items {
+  display: none !important;
+  width: 144px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 120%;
+  left: 15%;
+  color: var(--darkGrey);
+  background-color: var(--bgColor);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  box-shadow: 0 6px 10px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.user-items a {
+  display: flex;
+  padding: 4px;
+  border-bottom: 1px solid var(--lightGrey);
+  text-align: right;
+  cursor: pointer;
+}
+.user-items img {
+  background-color: var(--bgColor);
+  margin-left: 0;
+  padding: 0 0.2rem;
+  position: relative;
+}
+
+/************************* Slide bar */
+
+.slider {
+  width: 100%;
+  height: 336px;
+  /* position: relative;
+  top: 115px; */
+  background-image: url(./assets/Slider.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.top-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2rem;
+  position: relative;
+  top: calc(336px - 73%);
+}
+
+.top-sec i {
+  color: var(--bgColor);
+}
+
+.slidebar-text {
+  color: var(--greenTint);
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.order {
+  color: var(--bgColor);
+  background-color: var(--primary);
+  font-family: "Estedad";
+  border: none;
+  border-radius: 10px;
+  padding: 8px 34px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 6.8rem;
+}
+
+.bullets {
+  position: relative;
+  top: 23px;
+  right: 43.5%;
+  background-color: var(--bgColor);
+  width: 155px;
+  height: 35px;
+  border-radius: 7rem 7rem 0 0;
+  z-index: 1;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--lightGrey);
+  display: inline-block;
+  margin: 0 2px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  right: 17%;
+  top: 10%;
+}
+.selected {
+  background-color: var(--primary);
+  width: 15px;
+  height: 15px;
+  top: 5px;
+}
+/***************** Menu */
+
+.title {
+  color: var(--darkGrey);
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.menu-container {
+  display: flex;
+  margin: 0 4rem;
+}
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+.menu-section img {
+  width: 240px;
+  height: 240px;
+}
+.drink-img {
+  position: relative;
+  bottom: 3rem;
+}
+
+.img-container {
+  background-color: var(--primary);
+  height: 160px;
+  width: 100%;
+  position: relative;
+  top: -30%;
+  border-radius: 8px;
+  border: 1px solid var(--primary);
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+
+.menu-btns {
+  position: relative;
+  top: -34%;
+  width: 155px;
+  height: 48px;
+  padding: 8px 16px;
+  font-size: 20px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.19);
+  color: var(--darkGrey);
+  font-family: "Estedad";
+  font-weight: 400;
+  text-align: center;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/************************* About */
+
+.about {
+  background-image: url(./assets/about.png);
+  width: 100%;
+  height: 390px;
+  margin-top: -7rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.about .right-sec {
+  margin: 0 4rem;
+}
+
+.about .left-sec {
+  margin: 4rem 6rem;
+}
+
+.about .title {
+  color: var(--bgColor);
+  font-size: 24px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.about .desc {
+  color: var(--bgColor);
+  font-size: 16px;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/********************* Branches */
+.branch-title {
+  color: var(--darkGrey);
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
+
+.branches {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.3rem;
+  margin: 0 4rem 3rem 6rem;
+}
+
+.branches .branch {
+  text-align: center;
+  border: 1px solid var(--lightGrey);
+  border-radius: 0 0 8px 8px;
+  cursor: pointer;
+  padding-bottom: 1rem;
+}
+
+.branches .branch:hover {
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+}
+
+.branch-four img {
+  height: 192px;
+}
+.branch-img {
+  width: 240px;
+  height: auto;
+}
+
+.branches .name {
+  color: var(--darkGrey);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.branches .address {
+  color: var(--grey);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/*************** Footer */
+
+footer {
+  width: 100%;
+  height: 319px;
+  background-image: url(./assets/Footer.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  justify-content: end;
+}
+
+footer .title {
+  color: var(--bgColor);
+  font-size: 20px;
+  font-weight: 700;
+  text-align: right;
+  margin: 2rem 0 1.2rem 0;
+}
+
+footer a {
+  color: var(--lightGrey);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 1rem 1rem 0;
+}
+
+.contact,
+.footer-branch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer .contact {
+  margin-top: -2.3rem;
+}
