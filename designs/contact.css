@@ -232,6 +232,7 @@ a {
   flex: 0 0 50%;
   border-radius: 0 8px 8px 0;
   cursor: pointer;
+  z-index: 1;
 }
 .component .component-info {
   flex: 0 0 50%;
@@ -259,9 +260,24 @@ a {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.component:hover img {
+.component:hover .branch-pic {
   filter: brightness(50%);
 }
+.component:hover .icon img{
+  display: block;
+}
+
+
+.icon img{
+  display: none;
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  right: 22%;
+  top: 36%;
+  z-index: 2;
+}
+
 
 /************************* Footer */
 footer {
@@ -274,6 +290,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 200px);
   justify-content: end;
+  margin-top: 1rem;
 }
 
 footer .title {
