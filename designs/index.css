@@ -322,6 +322,9 @@ a {
   z-index: 1;
   cursor: pointer;
 }
+.menu-btns a{
+  color: var(--darkGrey);
+}
 
 /************************* About */
 

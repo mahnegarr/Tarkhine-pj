@@ -33,11 +33,15 @@
             </div>
           </li>
           <li class="menu">
-            <a href="" style="
-            font-weight: 500;
-            color: #417f56;
-            border-bottom: 2px solid #417f56;
-          ">منو<i class="fas fa-chevron-down"></i></a>
+            <a
+              href=""
+              style="
+                font-weight: 500;
+                color: #417f56;
+                border-bottom: 2px solid #417f56;
+              "
+              >منو<i class="fas fa-chevron-down"></i
+            ></a>
             <div class="menu-items">
               <a href="./menu.html">غذای اصلی</a>
               <a href="./menu.html">پیش غذا</a>
@@ -88,10 +92,12 @@
     <section class="slider">
       <div class="top-sec">
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
-        <p class="slidebar-text">لذت غذای سالم و گیاهی را با ترخینه تجربه کنید!</p>
+        <p class="slidebar-text">
+          لذت غذای سالم و گیاهی را با ترخینه تجربه کنید!
+        </p>
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
       </div>
-    
+
       <div class="bullets">
         <span class="dot selected"></span>
         <span class="dot"></span>
@@ -112,47 +118,57 @@
     </section>
 
     <section class="menu-container">
-      <div class="foods">
-        <button class="iranian-food">غذاهای ایرانی</button>
-        <button class="foreign-food">غذاهای غیر ایرانی</button>
-      </div>
-      <div class="search-box">
-        <input type="search" name="search" placeholder="جستجو">
-        <img src="./designs/assets/search-black.svg" alt="" >
+      <div class="top-sec">
+        <div class="foods">
+          <button class="iranian-food">
+            غذاهای ایرانی<i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="foreign-food">
+            غذاهای غیر ایرانی<i class="fas fa-chevron-left"></i>
+          </button>
+        </div>
+        <div class="search-box">
+          <input type="search" name="search" placeholder="جستجو" id="search" />
+          <img src="./designs/assets/search-black.svg" alt="" />
+        </div>
       </div>
 
       <div class="allFood">
-        <p>غذاهای ایرانی</p>
-        <button class="complete-purchase">
-          <img src="" alt="">
-          تکمیل خرید
-        </button>
-
-        <div class="food">
-          <div class="food-image">
-            <img src="" alt="">
-          </div>
-          <div class="food-info">
-            <div class="food-name">
-              <p></p>
-              
-            </div>
-            <div class="food-detail">
-              <p class="food-recipe"></p>
-              <p class="food-price-box">
-                <span class="last-price"></span>
-                <span class="discount"></span>
-              </p>
-              <p class="first-price"></p>
-            </div>
-          </div>
-          <div class="food-cta">
-            <div class="food-star">
-              <img src="" alt="">
-            </div>
-            <button class="add-to-cart"></button>
+        <div class="allFood-header">
+          <p>غذاها </p>
+          <div>
+            <button class="complete-purchase">
+              <img src="./designs/assets/shopping-cart.svg" alt="" />
+              تکمیل خرید
+            </button>
           </div>
         </div>
+        <!-- <div class="food-container">
+          <div class="food">
+            <div class="food-image">
+              <img src="" alt="" />
+            </div>
+            <div class="food-info">
+              <div class="food-name">
+                <p></p>
+              </div>
+              <div class="food-detail">
+                <p class="food-recipe"></p>
+                <p class="food-price-box">
+                  <span class="last-price"></span>
+                  <span class="discount"></span>
+                </p>
+                <p class="first-price"></p>
+              </div>
+            </div>
+            <div class="food-cta">
+              <div class="food-star">
+                <img src="" alt="" />
+              </div>
+              <button class="add-to-cart"></button>
+            </div>
+          </div>
+        </div> -->
       </div>
     </section>
 
@@ -171,5 +187,6 @@
         <a href="#">شعبه ونک</a>
       </div>
     </footer>
+    <script type="module" src="./designs/js/menu.js"></script>
   </body>
 </html>
