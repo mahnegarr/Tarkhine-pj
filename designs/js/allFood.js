@@ -88,6 +88,7 @@ export const specialFood = [
     offPrice:"۲۲۰٬۰۰۰",
     discount:"8",
     star:"5",
+    starPoint:"52",
     price:"209,000",
     image:"https://s6.uupload.ir/files/dolme_ppga.png"
   },
@@ -96,6 +97,8 @@ export const specialFood = [
     name:"بادمجان شکم‌پر",
     offPrice:"۱۵۰٬۰۰۰",
     discount:"18",
+    star:"4",
+    starPoint:"32",
     price:"136,000",
     image:"https://s6.uupload.ir/files/bademjoon-shekampor_016g.png"
   },
@@ -104,6 +107,8 @@ export const specialFood = [
     name:"کالزونه اسفناج",
     offPrice:"۱۹۰٬۰۰۰",
     discount:"17",
+    star:"5",
+    starPoint:"62",
     price:"177,000",
     image:"https://s6.uupload.ir/files/kalzone_3nau.png"
   },
@@ -112,6 +117,8 @@ export const specialFood = [
     name:" پیتزا قارچ",
     offPrice:"۲۱۵٬۰۰۰",
     discount:"25",
+    star:"3",
+    starPoint:"33",
     price:"175,000",
     image:"https://s6.uupload.ir/files/pizza-gharch_xq2q.png"
   }
