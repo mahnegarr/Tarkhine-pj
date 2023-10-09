@@ -266,11 +266,14 @@ a {
 }
 
 /************* Special and Fav and Foreign box */
+
 h1 {
   margin-right: 4rem;
 }
 
-.special-box,.foreign-box {
+.special-box,
+.foreign-box,
+.customer-preview {
   width: 100vw;
   height: 433px;
   margin: 0 4rem 2rem 0;
@@ -279,16 +282,16 @@ h1 {
   flex-direction: row;
   margin-top: 1rem;
 }
-.fav-box{
+.fav-box {
   background-color: var(--primary);
   display: flex;
   padding: 4rem 4rem 2rem 0;
   margin-bottom: 2rem;
 }
-.fav-box .box-container{
+.fav-box .box-container {
   background-color: var(--bgColor);
 }
-.fav-title{
+.fav-title {
   color: var(--bgColor);
   position: relative;
   top: 3.4rem;
@@ -308,7 +311,7 @@ h1 {
   text-align: center;
 }
 
-.top-sec{
+.top-sec {
   margin-bottom: 1.5rem;
 }
 .top-sec .add-to-fav {
@@ -390,7 +393,7 @@ h1 {
 }
 
 /*************** Go to menu button */
-.go-to-menu{
+.go-to-menu {
   background-color: var(--bgColor);
   border: 2px solid var(--primary);
   border-radius: 5px;
@@ -398,19 +401,19 @@ h1 {
   display: flex;
   position: relative;
   right: 42%;
-  padding: .3rem .5rem;
+  padding: 0.3rem 0.5rem;
   margin-bottom: 3rem;
   cursor: pointer;
 }
-.go-to-menu button{
+.go-to-menu button {
   border: none;
   background-color: var(--bgColor);
   color: var(--primary);
   font-family: "Estedad";
-  padding-right: .4rem;
+  padding-right: 0.4rem;
 }
 
-h2{
+h2 {
   color: var(--darkGrey);
   text-align: center;
   margin-bottom: 1rem;
@@ -418,7 +421,7 @@ h2{
 
 /*************** branch info */
 
-.branch-info{
+.branch-info {
   width: 780px;
   height: 130px;
   display: flex;
@@ -434,7 +437,104 @@ h2{
   margin-bottom: 1rem;
 }
 
-.branch-info div{
+.branch-info div {
   width: 200px;
   text-align: center;
+}
+
+/*********************** Customer preview */
+.customer-preview{
+  margin-bottom: -9rem;
+}
+.customer {
+  margin-left: 2rem;
+  border: 1px solid var(--lightGrey);
+  border-radius: 5px;
+  width: 600px;
+  height: 200px;
+  padding: 1rem;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+.profile img {
+  width: 90px;
+}
+
+.pic-name {
+  margin-top: 0.5rem;
+}
+.opinion {
+  width: 410px;
+  position: relative;
+  right: 25%;
+  top: -50%;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--darkGrey);
+}
+
+.date-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -45%;
+}
+.date {
+  margin-top: -0.6rem;
+  color: var(--grey);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.star-rate {
+  font-family: "Yekan";
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+.star-rate img {
+  width: 1rem;
+  margin-left: 0.2rem;
+}
+
+/*************** Footer */
+
+footer {
+  width: 100vw;
+  height: 319px;
+  background-image: url(./assets/Footer.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  justify-content: end;
+}
+
+footer .title {
+  color: var(--bgColor);
+  font-size: 20px;
+  font-weight: 700;
+  text-align: right;
+  margin: 2rem 0 1.2rem 0;
+}
+
+footer a {
+  color: var(--lightGrey);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 1rem 1rem 0;
+}
+
+.contact,
+.footer-branch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer .contact {
+  margin-top: -2.3rem;
 }
