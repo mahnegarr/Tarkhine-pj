@@ -1,4 +1,8 @@
 @import url("https://v1.fontapi.ir/css/Estedad:200;300;500;700");
+@font-face {
+  font-family: "Yekan";
+  src: url(./assets/YEKAN\ PLUS.TTF) format("truetype");
+}
 
 :root {
   --bgColor: #ffffff;
@@ -126,8 +130,8 @@ a {
   border-radius: 5px;
   margin-left: 0.4rem;
 }
-.user-icon-container{
-    position: relative;
+.user-icon-container {
+  position: relative;
 }
 .user-icon {
   background-color: var(--greenTint);
@@ -137,10 +141,9 @@ a {
   cursor: pointer;
 }
 
-
-.user-icon-container:hover .user-items{
-    display: block !important;
-    transition: all 0.5s ease-in-out;
+.user-icon-container:hover .user-items {
+  display: block !important;
+  transition: all 0.5s ease-in-out;
 }
 .user-icon i {
   color: var(--primary);
@@ -263,23 +266,105 @@ a {
 }
 
 /************* Box Slider */
+h1{
+  margin-right: 2rem;
+}
+.box-slider {
+  width: 100%;
+  height: auto;
+  margin: 0 2rem 2rem 0;
+  overflow: hidden;
+}
+.box-container {
+  border: 1px solid var(--grey);
+  border-radius: 8px;
+  width: 290px;
+}
 
-.box-slider{
-    border: 1px solid black;
-    width: 100%;
-    height: auto;
-    margin-bottom: 2rem;
-    overflow: hidden;
-    
+.food-title {
+  color: var(--darkGrey);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.top-sec{
+  margin-top: .7rem;
+}
+.top-sec .add-to-fav {
+  display: flex;
+  align-items: center;
+  margin-right: -1rem;
+}
+.add-to-fav p {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--lightGrey);
+  margin-right: 0.3rem;
+}
+.add-to-fav img {
+  cursor: pointer;
+}
+
+.top-sec .price-box {
+  display: flex;
+}
+.price-box .offprice {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--lightGrey);
+  text-decoration: line-through;
+}
+.discount {
+  font-size: 10px;
+  font-weight: 400;
+  color: #c30000;
+  background-color: #f9efef;
+  margin-right: .5rem;
+}
+.discount span{
+  font-size: 8px;
+  font-family: "Estedad";
+}
+.price-box,
+.last-price,
+.star-box {
+  font-family: "yekan";
+}
+.bottom-sec{
+  display: flex;
+}
+.star-box{
+  display: flex;
+  margin-right: .8rem;
+  align-items: center;
+}
+.star-box img{
+  width: 1.3rem;
+  height: 1.2rem;
 
 }
-.box-container{
-    border: 2px solid red;
-    width: 290px;
+.star-point{
+  font-size: 10px;
+  color: var(--lightGrey);
+  margin:0 .3rem 0 6rem;
 }
-.food-title{
-    color: var(--darkGrey);
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
+.star-box p{
+  text-align: center;
+}
+.bottom-sec .last-price{
+  display: flex;
+}
+.bottom-sec{
+  margin-bottom: 1rem;
+}
+.add-to-cart {
+  background-color: var(--primary);
+  font-family: "Estedad";
+  border: none;
+  border-radius: 5px;
+  color: var(--bgColor);
+  width: 90%;
+  padding: 3px;
+  margin: 0 0.8rem 0.8rem 0;
+  cursor: pointer;
 }

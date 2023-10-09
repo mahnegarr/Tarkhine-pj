@@ -80,3 +80,39 @@ export const allFood = [
     type: "foreign",
   },
 ];
+
+export const specialFood = [
+  {
+    id:1,
+    name:"دلمه برگ کلم",
+    offPrice:"۲۲۰٬۰۰۰",
+    discount:"8",
+    star:"5",
+    price:"209,000",
+    image:"https://s6.uupload.ir/files/dolme_ppga.png"
+  },
+  {
+    id:2,
+    name:"بادمجان شکم‌پر",
+    offPrice:"۱۵۰٬۰۰۰",
+    discount:"18",
+    price:"136,000",
+    image:"https://s6.uupload.ir/files/bademjoon-shekampor_016g.png"
+  },
+  {
+    id:3,
+    name:"کالزونه اسفناج",
+    offPrice:"۱۹۰٬۰۰۰",
+    discount:"17",
+    price:"177,000",
+    image:"https://s6.uupload.ir/files/kalzone_3nau.png"
+  },
+  {
+    id:4,
+    name:" پیتزا قارچ",
+    offPrice:"۲۱۵٬۰۰۰",
+    discount:"25",
+    price:"175,000",
+    image:"https://s6.uupload.ir/files/pizza-gharch_xq2q.png"
+  }
+]
