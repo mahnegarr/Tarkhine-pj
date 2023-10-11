@@ -79,28 +79,32 @@
               ><img src="./designs/assets/logoutSVG.svg" alt="logout" />ورود /
               ثبت نام</a
             >
-            <div class="backdrop"></div>
           </div>
         </div>
       </div>
     </nav>
-    <div class="modal">
-      <div class="logo">
-        <img src="./designs/assets/Logo.png" alt="logo" />
-        <span>&times;</span>
-      </div>
-      <div class="login-title">
-        <p>ورود / ثبت نام</p>
-        <p class="desc">
-          با وارد کردن شماره موبایل کد تاییدی برای شما ارسال خواهد شد.
+    <div class="backdrop">
+      <div class="modal">
+        <div class="logo">
+          <img src="./designs/assets/Logo.png" alt="logo" />
+          <span class="close-modal">&times;</span>
+        </div>
+        <div class="login-title">
+          <p>ورود / ثبت نام</p>
+          <p class="desc">
+            با وارد کردن شماره موبایل کد تاییدی برای شما ارسال خواهد شد.
+          </p>
+        </div>
+        <fieldset>
+          <legend>شماره همراه</legend>
+          <input type="text" id="number" inputmode="numeric" pattern="[0-9]+" />
+        </fieldset>
+        <button disabled id="continue" >ادامه</button>
+        <p class="rules">
+          ورود و عضویت در ترخینه به منزله قبول
+          <a href="">قوانین و مقررات </a>است.
         </p>
       </div>
-      <fieldset>
-        <legend>شماره همواره</legend>
-        <input type="text" id="number" inputmode="numeric" pattern="[0-9]+" />
-      </fieldset>
-      <button>ادامه</button>
-      <p class="rules">ورود و عضویت در ترخینه به منزله قبول  <a href="">قوانین و مقررات </a>است.</p>
     </div>
 
     <section class="slider">

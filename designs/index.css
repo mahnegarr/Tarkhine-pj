@@ -1,4 +1,8 @@
 @import url("https://v1.fontapi.ir/css/Estedad:200;300;500;700");
+@font-face {
+  font-family: "Yekan";
+  src: url(./assets/YEKAN\ PLUS.TTF) format("truetype");
+}
 
 :root {
   --bgColor: #ffffff;
@@ -126,8 +130,8 @@ a {
   border-radius: 5px;
   margin-left: 0.4rem;
 }
-.user-icon-container{
-    position: relative;
+.user-icon-container {
+  position: relative;
 }
 .user-icon {
   background-color: var(--greenTint);
@@ -137,10 +141,9 @@ a {
   cursor: pointer;
 }
 
-
-.user-icon-container:hover .user-items{
-    display: block !important;
-    transition: all 0.5s ease-in-out;
+.user-icon-container:hover .user-items {
+  display: block !important;
+  transition: all 0.5s ease-in-out;
 }
 .user-icon i {
   color: var(--primary);
@@ -185,8 +188,9 @@ a {
   position: relative;
 }
 
-.backdrop{
-  display: none;
+/************************** Modal */
+.backdrop {
+  /* display: none; */
   width: 100%;
   height: 100%;
   z-index: 5;
@@ -194,6 +198,100 @@ a {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+.modal {
+  position: fixed;
+  width: 390px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--bgColor);
+  border-radius: 8px;
+  padding: 1rem;
+  z-index: 10;
+}
+.modal .logo {
+  display: flex;
+  justify-content: center;
+}
+.modal .logo span {
+  font-size: 2rem;
+  position: relative;
+  top: -1rem;
+  right: 10rem;
+  color: var(--grey);
+  cursor: pointer;
+}
+
+.modal .logo img {
+  width: 100px;
+  position: absolute;
+}
+
+.login-title {
+  text-align: center;
+  font-weight: 400;
+}
+.login-title p:first-child {
+  color: var(--darkGrey);
+}
+.login-title p:last-child {
+  color: var(--grey);
+  font-size: 12px;
+}
+.modal fieldset{
+  width: 340px;
+  margin-right: .5rem;
+  border-radius: 3px;
+  border: 1px solid var(--darkGrey);
+
+}
+.modal legend{
+  margin-right: 1rem;
+  font-family: "Estedad";
+  color: var(--darkGrey);
+  font-size: 12px;
+  padding: 0 2px;
+}
+.modal input{
+  width: 100%;
+  border: none;
+  direction: ltr;
+  font-family: "yekan";
+  font-size: 18px;
+  color: var(--grey);
+  padding-left: 1rem;
+}
+
+.modal input:focus{
+  outline: none;
+  padding-left: 1rem;
+}
+.modal button {
+  background-color: #ededed;
+  color: var(--lightGrey);
+
+  border: none;
+  border-radius: 3px;
+  font-family: "Estedad";
+  width: 340px;
+  height: 40px;
+  text-align: center;
+  margin: 0.7rem 0.5rem 0.6rem 0;
+  cursor: pointer;
+}
+.enable-btn{
+  background-color: var(--primary) !important;
+  color: var(--bgColor) !important;
+}
+.rules {
+  font-size: 12px;
+  text-align: center;
+}
+.rules a {
+  color: var(--primary);
 }
 /************************* Slide bar */
 
@@ -332,7 +430,7 @@ a {
   z-index: 1;
   cursor: pointer;
 }
-.menu-btns a{
+.menu-btns a {
   color: var(--darkGrey);
 }
 
