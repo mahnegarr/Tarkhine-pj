@@ -57,20 +57,51 @@
         <img src="./designs/assets/search-normal.svg" alt="search" />
         <img src="./designs/assets/shopping-cart.svg" alt="shopping-cart" />
         <div class="user-icon-container">
-            <div class="user-icon">
-                <img src="./designs/assets/user.svg" alt="user" />
-                <i class="fas fa-chevron-down"></i>
-              </div>
-              <div class="user-items">
-                  <a href="./profile.html"><img src="./designs/assets/userSVG.svg" alt="user-icon">پروفایل</a>
-                  <a href=""><img src="./designs/assets/wallet-2.svg" alt="wallet-2">پیگیری سفارش</a>
-                  <a href="./empty-interest.html"><img src="./designs/assets/heartSVG.svg" alt="heart">علاقه مندی ها</a>
-                  <a href=""><img src="./designs/assets/locationSVG.svg" alt="location">آدرس های من</a>
-                  <a href="./logout.html"><img src="./designs/assets/logoutSVG.svg" alt="logout">خروج از سایت</a>
-              </div>
-            </div>
+          <div class="user-icon">
+            <img src="./designs/assets/user.svg" alt="user" />
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="user-items">
+            <!-- <a href="./profile.html"><img src="./designs/assets/userSVG.svg" alt="user-icon">پروفایل</a> -->
+            <a href=""
+              ><img src="./designs/assets/wallet-2.svg" alt="wallet-2" />پیگیری
+              سفارش</a
+            >
+            <a href="./empty-interest.html"
+              ><img src="./designs/assets/heartSVG.svg" alt="heart" />علاقه مندی
+              ها</a
+            >
+            <a href=""
+              ><img src="./designs/assets/locationSVG.svg" alt="location" />آدرس
+              های من</a
+            >
+            <a href="" id="logout"
+              ><img src="./designs/assets/logoutSVG.svg" alt="logout" />ورود /
+              ثبت نام</a
+            >
+            <div class="backdrop"></div>
+          </div>
         </div>
+      </div>
     </nav>
+    <div class="modal">
+      <div class="logo">
+        <img src="./designs/assets/Logo.png" alt="logo" />
+        <span>&times;</span>
+      </div>
+      <div class="login-title">
+        <p>ورود / ثبت نام</p>
+        <p class="desc">
+          با وارد کردن شماره موبایل کد تاییدی برای شما ارسال خواهد شد.
+        </p>
+      </div>
+      <fieldset>
+        <legend>شماره همواره</legend>
+        <input type="text" id="number" inputmode="numeric" pattern="[0-9]+" />
+      </fieldset>
+      <button>ادامه</button>
+      <p class="rules">ورود و عضویت در ترخینه به منزله قبول  <a href="">قوانین و مقررات </a>است.</p>
+    </div>
 
     <section class="slider">
       <div class="top-sec">
@@ -199,5 +230,6 @@
         <a href="#">شعبه ونک</a>
       </div>
     </footer>
+    <script src="./designs/js/index.js" type="module"></script>
   </body>
 </html>
