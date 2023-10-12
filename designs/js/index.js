@@ -1,4 +1,4 @@
-const logout = document.querySelector(".logout");
+const login = document.querySelector(".login");
 const backdrop = document.querySelector(".backdrop");
 const closeIcon = document.querySelector(".close-modal");
 const modal = document.querySelector(".modal");
@@ -13,10 +13,14 @@ function showModal() {
 function closeModal() {
   modal.style.display = "none";
   backdrop.style.display = "none";
+  localStorage.removeItem("modalShown");
 }
-logout.addEventListener("click", (e) => {
-
-  showModal();
+login.addEventListener("click", () => {
+  const modalShown = localStorage.getItem("modalShown");
+  if (!modalShown) {
+    showModal();
+    localStorage.setItem("modalShown", "true");
+  }
 });
 closeIcon.addEventListener("click", () => {
   closeModal();

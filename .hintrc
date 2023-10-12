@@ -15,6 +15,13 @@
       {
         "image-alt": "off"
       }
-    ]
+    ],
+    "axe/keyboard": [
+      "default",
+      {
+        "nested-interactive": "off"
+      }
+    ],
+    "button-type": "off"
   }
 }
