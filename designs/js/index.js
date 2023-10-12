@@ -1,24 +1,30 @@
-const logout = document.getElementById("logout");
+const logout = document.querySelector(".logout");
 const backdrop = document.querySelector(".backdrop");
 const closeIcon = document.querySelector(".close-modal");
 const modal = document.querySelector(".modal");
 const phoneNumber = document.getElementById("number");
 const continueBtn = document.getElementById("continue");
 
-logout.addEventListener("click", () => {
+function showModal() {
   backdrop.style.display = "block";
-});
+  modal.style.display = "block";
+  console.log("hi");
+}
 function closeModal() {
   modal.style.display = "none";
   backdrop.style.display = "none";
 }
+logout.addEventListener("click", (e) => {
+
+  showModal();
+});
 closeIcon.addEventListener("click", () => {
   closeModal();
 });
 
-window.addEventListener("click",()=>{
-    closeModal()
-})
+window.addEventListener("click", () => {
+  closeModal();
+});
 
 function validateNumber(phoneNumber) {
   if (phoneNumber.length !== 11) {
