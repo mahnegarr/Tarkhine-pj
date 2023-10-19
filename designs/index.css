@@ -20,10 +20,8 @@
 }
 
 body {
-  /* width: 1160px;
-  height: 2123; */
-  width: 100vw;
-  height: 100vw;
+  width: 1160px;
+  height: 2123;
   direction: rtl;
   display: flex;
   flex-direction: column;
@@ -32,7 +30,7 @@ body {
   overflow-x: hidden;
 }
 
-/* nav {
+nav {
 
   width: 100%;
   height: 115px;
@@ -41,7 +39,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-} */
+}
 
 .header-sections {
   display: flex;
