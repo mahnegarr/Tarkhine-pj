@@ -441,7 +441,8 @@ a {
 
 .menu-container {
   display: flex;
-  margin: 0 4rem;
+  /* margin: 0 4rem; */
+  justify-content: center;
 }
 .menu-section {
   display: flex;
