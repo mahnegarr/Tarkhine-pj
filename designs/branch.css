@@ -20,8 +20,8 @@
 }
 
 body {
-  width: 1160px;
-  height: 2123;
+  min-width: 1160px;
+  min-height: 2123;
   direction: rtl;
   display: flex;
   flex-direction: column;
@@ -191,11 +191,11 @@ a {
 /************************* Slide bar */
 
 .slider {
-  width: 100vw;
+  width: 100%;
   height: 336px;
   background-image: url(./assets/Slider.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .top-sec {
@@ -237,7 +237,7 @@ a {
 
 .bullets {
   position: relative;
-  top: 23px;
+  top: 80px;
   right: 43.5%;
   background-color: var(--bgColor);
   width: 155px;
