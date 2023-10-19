@@ -18,8 +18,8 @@
 }
 
 body {
-  width: 1165px;
-  height: 2123;
+  min-width: 1165px;
+  min-height: 2123;
   direction: rtl;
   display: flex;
   flex-direction: column;
