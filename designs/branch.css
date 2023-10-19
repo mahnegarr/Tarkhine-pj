@@ -403,7 +403,9 @@ h1 {
   right: 42%;
   padding: 0.3rem 0.5rem;
   margin-bottom: 3rem;
-  cursor: pointer;
+}
+.go-to-menu a{
+  display: flex;
 }
 .go-to-menu button {
   border: none;
@@ -411,6 +413,7 @@ h1 {
   color: var(--primary);
   font-family: "Estedad";
   padding-right: 0.4rem;
+  cursor: pointer;
 }
 
 h2 {

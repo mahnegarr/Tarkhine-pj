@@ -6,7 +6,7 @@ export const allFood = [
     price: "180,000",
     offPrice: "145,000",
     discount: "35",
-    image: "https://s6.uupload.ir/files/koofte-berenji_wjtl.png",
+    image: "https://www.uplooder.net/img/image/85/de5df1a603e81850baeca9daa116d5e2/koofte-berenji.png",
     type: "iranian",
   },
   {
@@ -16,7 +16,7 @@ export const allFood = [
     price: "210,000",
     offPrice: "203,000",
     discount: "5",
-    image: "https://s6.uupload.ir/files/kashke-bademjoon_uji.png",
+    image: "https://www.uplooder.net/img/image/89/0d7f0f91183dbb9dcbbbd41f22b7f554/kashke-bademjoon.png",
     type: "iranian",
   },
   {
@@ -26,7 +26,7 @@ export const allFood = [
     price: "165,000",
     offPrice: "142,500",
     discount: "10",
-    image: "https://s6.uupload.ir/files/kalzon_z0y3.png",
+    image: "https://www.uplooder.net/img/image/97/8fb095a9d7f1d517615849818adc3f23/kalzon.png",
     type: "iranian",
   },
   {
@@ -36,7 +36,7 @@ export const allFood = [
     price: "205,000",
     offPrice: "180,000",
     discount: "30",
-    image: "https://s6.uupload.ir/files/baghela_cvpj.png",
+    image: "https://www.uplooder.net/img/image/41/e754d11dff631bafc4e56848bd9b3a3e/baghela.png",
     type: "iranian",
   },
   {
@@ -46,7 +46,7 @@ export const allFood = [
     price: "175,000",
     offPrice: "140,000",
     discount: "20",
-    image: "https://s6.uupload.ir/files/pasta-sabzijat_dqey.png",
+    image: "https://www.uplooder.net/img/image/73/6188e06b238a0eb2e644fe9ab7bc29d2/pasta-sabzijat.png",
     type: "foreign",
   },
   {
@@ -56,7 +56,7 @@ export const allFood = [
     price: "170,000",
     offPrice: "160,000",
     discount: "12",
-    image: "https://s6.uupload.ir/files/lasania_9dac.png",
+    image: "https://www.uplooder.net/img/image/45/9b2937a847cb536f00af13cf6c8aaa93/lasania.png",
     type: "foreign",
   },
   {
@@ -66,7 +66,7 @@ export const allFood = [
     price: "100,000",
     offPrice: "85,000",
     discount: "15",
-    image: "https://s6.uupload.ir/files/sushi_nefp.png",
+    image: "https://www.uplooder.net/img/image/5/6743f8d4acd914586add27feb0dba541/sushi.png",
     type: "foreign",
   },
   {
@@ -76,7 +76,7 @@ export const allFood = [
     price: "195,000",
     offPrice: "188,000",
     discount: "12",
-    image: "https://s6.uupload.ir/files/pizza_8m9i.png",
+    image: "https://www.uplooder.net/img/image/67/28a0093dbb2dfa5f2c3ce38629d38392/pizza.png",
     type: "foreign",
   },
 ];
@@ -90,7 +90,7 @@ export const specialFood = [
     star:"5",
     starPoint:"52",
     price:"209,000",
-    image:"https://s6.uupload.ir/files/dolme_ppga.png"
+    image:"https://www.uplooder.net/img/image/71/d4c5806d98a5a8786d173ec6a2ad906f/dolme.png"
   },
   {
     id:2,
@@ -100,7 +100,7 @@ export const specialFood = [
     star:"4",
     starPoint:"32",
     price:"136,000",
-    image:"https://s6.uupload.ir/files/bademjoon-shekampor_016g.png"
+    image:"https://www.uplooder.net/img/image/99/8103bd317515464868fe1dc13f451fb3/bademjoon-shekampor.png"
   },
   {
     id:3,
@@ -110,7 +110,7 @@ export const specialFood = [
     star:"5",
     starPoint:"62",
     price:"177,000",
-    image:"https://s6.uupload.ir/files/kalzone_3nau.png"
+    image:"https://www.uplooder.net/img/image/92/8ac86900241533f915ab22ff9ba1f89a/kalzone.png"
   },
   {
     id:4,
@@ -120,6 +120,6 @@ export const specialFood = [
     star:"3",
     starPoint:"33",
     price:"175,000",
-    image:"https://s6.uupload.ir/files/pizza-gharch_xq2q.png"
+    image:"https://www.uplooder.net/img/image/93/f1d07c6b7f9830e5416f8053ef3951da/pizza-gharch.png"
   }
 ]
