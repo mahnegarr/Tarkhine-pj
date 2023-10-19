@@ -20,8 +20,8 @@
 }
 
 body {
-  width: 1160px;
-  height: 2123;
+  min-width: 1160px;
+  min-height: 2123;
   direction: rtl;
   display: flex;
   flex-direction: column;
@@ -91,7 +91,7 @@ a {
   position: absolute;
   display: flex;
   flex-direction: column;
-  left: 40%;
+  left: 45%;
   top: 15%;
   color: var(--darkGrey);
   background-color: var(--bgColor);
@@ -111,10 +111,12 @@ a {
 
 .menu:hover .menu-items {
   display: block !important;
+  transition: all 0.5s ease-in-out;
 }
 
 .branch:hover .branch-items {
   display: block !important;
+  transition: all 0.5s ease-in-out;
 }
 .fas {
   font-size: 10px;
@@ -193,10 +195,9 @@ a {
 .slider {
   width: 100vw;
   height: 336px;
-
   background-image: url(./assets/menu-sidebar.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .top-sec {
