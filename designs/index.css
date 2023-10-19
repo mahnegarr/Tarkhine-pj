@@ -20,8 +20,10 @@
 }
 
 body {
-  width: 1160px;
-  height: 2123;
+  /* width: 1160px;
+  height: 2123; */
+  width: 100vw;
+  height: 100vw;
   direction: rtl;
   display: flex;
   flex-direction: column;
