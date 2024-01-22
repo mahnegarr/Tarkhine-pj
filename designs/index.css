@@ -51,10 +51,18 @@ li {
   list-style: none;
   color: var(--grey);
   font-size: 20px;
+  padding: 2rem 0;
 }
 li a {
   display: flex;
   align-items: center;
+}
+
+.branch-items a:hover,
+.menu-items a:hover,
+.user-items a:hover {
+  color: #417f56;
+  font-weight: bold;
 }
 a {
   color: var(--grey);
@@ -115,6 +123,10 @@ a {
 
 .branch:hover .branch-items {
   display: block !important;
+}
+
+.about-us {
+  cursor: pointer;
 }
 .fas {
   font-size: 10px;
@@ -557,11 +569,8 @@ a {
   border-radius: 8px;
 }
 
-.branch-four img {
-  height: 192px;
-}
 .branch-img {
-  width: 250px;
+  width: 260px;
   height: auto;
   object-fit: contain;
   margin: 0 auto;
