@@ -391,7 +391,7 @@ img {
   top: 50%;
   width: auto;
   padding: 16px;
-  margin-top: -22px;
+  margin-top: -52px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -403,11 +403,8 @@ img {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}
-
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  right: 96%;
 }
 
 .dot {
@@ -422,8 +419,7 @@ img {
   transition: background-color 0.6s ease;
 }
 
-.active,
-.dot:hover {
+.active{
   background-color: var(--primary);
 }
 
@@ -452,24 +448,23 @@ img {
   }
 }
 
-
 .top-sec {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   margin: 0 2rem;
   position: relative;
-  top: calc(336px - 73%);
-}
-
-.top-sec i {
-  color: var(--bgColor);
+  bottom: calc(336px - 30%);
 }
 
 .slidebar-text {
   color: var(--greenTint);
   font-weight: 700;
   font-size: 40px;
+  display: flex;
+  text-align: center;
+  margin: auto;
 }
 
 .order {
@@ -487,12 +482,13 @@ img {
 .button-container {
   display: flex;
   justify-content: center;
-  margin-top: 6.8rem;
+  position: relative;
+  bottom: calc(336px - 38%);
 }
 
 .bullets {
   position: relative;
-  top: 80px;
+  bottom: 43%;
   right: 43.5%;
   background-color: var(--bgColor);
   width: 155px;
