@@ -92,6 +92,13 @@ const plusSlides = (n) => {
 };
 
 const currentSlides = (n) => {
-  showSlides((slideIndex == n));
+  if(slideIndex!== n){
+
+    showSlides((slideIndex == n));
+    dots[slideIndex -1].className +="active";
+    for(let i=0;i<dots.length;i++){
+      dots[i].className=dots[i].className.replace("active","")
+    }
+  }
 };
 
