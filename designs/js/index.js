@@ -61,44 +61,53 @@ searchBtn.addEventListener("click", () => {
   showModal();
 });
 
-//slide show 
+//slide show
 const showSlides = (n) => {
   var i;
   var slides = document.getElementsByClassName("slides");
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {
-    slideIndex = 1;
+    n = 1;
   }
   if (n < 1) {
-    slideIndex = slides.length;
+    n = slides.length;
   }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
+    dots[i].className = dots[i].className.replace(" active", ""); // Remove "active" class from all dots
   }
 
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += "active";
+  slides[n - 1].style.display = "block";
+  dots[n - 1].className += " active"; // Add "active" class to current dot
 };
 
 let slideIndex = 1;
 showSlides(slideIndex);
 
 const plusSlides = (n) => {
-  showSlides((slideIndex += n));
+  slideIndex += n;
+  showSlides(slideIndex);
 };
 
-const currentSlides = (n) => {
-  if(slideIndex!== n){
-
-    showSlides((slideIndex == n));
-    dots[slideIndex -1].className +="active";
-    for(let i=0;i<dots.length;i++){
-      dots[i].className=dots[i].className.replace("active","")
-    }
-  }
+const currentSlide = (n) => {
+  slideIndex = n;
+  showSlides(slideIndex);
 };
 
+const dots = document.getElementsByClassName("dot");
+const prevButton = document.querySelector(".prev");
+const nextButton = document.querySelector(".next");
+
+prevButton.addEventListener("click", () => {
+  plusSlides(-1);
+});
+
+nextButton.addEventListener("click", () => {
+  plusSlides(1);
+});
+
+for (let i = 0; i < dots.length; i++) {
+  dots[i].addEventListener("click", () => {
+    currentSlide(i + 1);
+  });
+}
