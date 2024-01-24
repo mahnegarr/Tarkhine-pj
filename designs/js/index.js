@@ -61,7 +61,9 @@ searchBtn.addEventListener("click", () => {
   showModal();
 });
 
-var slideIndex = 1;
+//slide show 
+
+let slideIndex = 1;
 showSlides(slideIndex);
 
 const plusSlides = (n) => {
@@ -69,12 +71,12 @@ const plusSlides = (n) => {
 };
 
 const currentSlides = (n) => {
-  showSlides((slideIndex = n));
+  showSlides((slideIndex == n));
 };
 
 const showSlides = (n) => {
   var i;
-  var slides = document.getElementsByClassName("slides fade");
+  var slides = document.getElementsByClassName("slides");
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {
     slideIndex = 1;
