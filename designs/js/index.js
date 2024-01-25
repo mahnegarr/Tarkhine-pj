@@ -71,7 +71,8 @@ const next = document.querySelector(".next");
 let active = 0;
 const lengthItems = items.length - 1;
 
-next.addEventListener("click", function() {
+next.addEventListener("click", function () {
+  event.preventDefault();
   if (active + 1 > lengthItems) {
     active = 0;
   } else {
@@ -80,7 +81,8 @@ next.addEventListener("click", function() {
   reloadSlider();
 });
 
-prev.addEventListener("click", function() {
+prev.addEventListener("click", function () {
+  event.preventDefault();
   if (active - 1 < 0) {
     active = lengthItems;
   } else {
@@ -100,7 +102,7 @@ function reloadSlider() {
   const lastActiveDot = document.querySelector(".slider .bullets .dot.active");
   lastActiveDot.classList.remove("active");
   dots[active].classList.add("active");
-  
+
   clearInterval(refreshSlider);
   refreshSlider = setInterval(() => {
     next.click();
@@ -108,58 +110,8 @@ function reloadSlider() {
 }
 
 dots.forEach((dot, key) => {
-  dot.addEventListener("click", function() {
+  dot.addEventListener("click", function () {
     active = key;
     reloadSlider();
   });
 });
-
-// const showSlides = (n) => {
-//   var i;
-//   var slides = document.getElementsByClassName("slides");
-//   var dots = document.getElementsByClassName("dot");
-//   if (n > slides.length) {
-//     n = 1;
-//   }
-//   if (n < 1) {
-//     n = slides.length;
-//   }
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//     dots[i].className = dots[i].className.replace(" active", ""); // Remove "active" class from all dots
-//   }
-
-//   slides[n - 1].style.display = "block";
-//   dots[n - 1].className += " active"; // Add "active" class to current dot
-// };
-
-// let slideIndex = 1;
-// showSlides(slideIndex);
-
-// const plusSlides = (n) => {
-//   slideIndex += n;
-//   showSlides(slideIndex);
-// };
-
-// const currentSlide = (n) => {
-//   slideIndex = n;
-//   showSlides(slideIndex);
-// };
-
-// const dots = document.getElementsByClassName("dot");
-// const prevButton = document.querySelector(".prev");
-// const nextButton = document.querySelector(".next");
-
-// prevButton.addEventListener("click", () => {
-//   plusSlides(-1);
-// });
-
-// nextButton.addEventListener("click", () => {
-//   plusSlides(1);
-// });
-
-// for (let i = 0; i < dots.length; i++) {
-//   dots[i].addEventListener("click", () => {
-//     currentSlide(i + 1);
-//   });
-// }
